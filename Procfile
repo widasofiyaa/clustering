@@ -1,2 +1,1 @@
-web: bokeh serve --port=$PORT --host=visdat-clustering.herokuapp.com --host=* \
-     --address=0.0.0.0 --use-xheaders main.py
+web: bokeh serve --address="0.0.0.0" --port=$PORT --allow-websocket-origin==visdat-clustering.herokuapp.com --use-xheaders main.py
